@@ -1,0 +1,20 @@
+{
+    
+    "manifest_version": 2,
+    "name": "DeSaveify",
+    "version": "1.0",
+  
+    "description": "Blocks CTRL+S keyborad shortcut on websites, where you probably don't need it.",
+  
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["main.js"]
+      }
+    ]
+  
+  }
